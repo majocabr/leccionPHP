@@ -6,7 +6,7 @@ session_start();
 <html lang="es">
 	<head>
 		<meta charset ="utf-8">
-		<title> actualizar demo</title>
+		<title> GUARDAR</title>
 	</head>
 <body>
 
@@ -18,10 +18,13 @@ session_start();
 <aside>
 <?php
 $nombre=$_POST["nombre"];
+$tipo=$_POST["tipo"];
+$fecha_nacimiento=$_POST["fecha_nacimiento"];
+$imgsrc=$_POST["imgsrc"];
 
-include_once("DemoCollector.php");
-$DemoCollectorObj= new DemoCollector();
-$DemoCollectorObj->createDemo($nombre);
+include_once("UsuarioCollector.php");
+$UsuarioCollectorObj= new UsuarioCollector();
+$UsuarioCollectorObj->createUsuario($nombre,$tipo,$fecha_nacimiento,$imgsrc);
 echo "valor agregado </br>";
 ?>
 
