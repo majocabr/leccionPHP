@@ -25,6 +25,7 @@ print_r($ObjUsuario);
 ?>
 <h2>Editar Objeto </h2>
 <img src="<?php echo $ObjUsuario->getImgsrc(); ?>" width="100" height="100" alt="usuario">
+<img src="http://tusimagenesde.com/wp-content/uploads/2016/11/rostros-33.jpg" width="100" height="100" alt="usuario">
 <form id="contact-form" action="actualizar.php" method= "post">
 <div style="height: 20px;"></div>
 <div class="text-fieldsl">
